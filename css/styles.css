@@ -351,7 +351,7 @@ padding-right: 1;
   font-size: 16px;
   background-color:var(--blue-color);
   color:var(--header-color);
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   transition:transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: scale(1);
@@ -364,7 +364,7 @@ padding-right: 1;
 border: none;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
  transition:transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 
@@ -1451,7 +1451,7 @@ color: #212121;
  
 }
 
-/* -----------------ХОВЕР И ФОКУС-------------------- */
+/* -----------------ХОВЕР И ФОКУС НА ИНПУТЫ-------------------- */
 
 
 
@@ -1464,9 +1464,9 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }  
 
 
-.input-modal:hover,
-.input-modal:focus {
-  outline: none;
+ .input-modal:hover,
+ .input-modal:focus {
+ outline: none;
 border-color: #2196F3;
 transition: border-color, transform  250ms cubic-bezier(0.4, 0, 0.2, 1); 
 transform: scale(1.02);  
@@ -1483,7 +1483,20 @@ transform: scale(1.02);
 padding: 12px 16px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
+outline: none;
+  transition:transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
 }
+
+
+.input-texteria:hover,
+.input-texteria:focus {
+ outline: none;
+border-color: #2196F3;
+transition: border-color, transform  250ms cubic-bezier(0.4, 0, 0.2, 1); 
+transform: scale(1.02);  
+}  
+
 
 
 /* --------SVG------------ */
@@ -1498,59 +1511,5 @@ bottom:0%;
  transform: translate(15px,-11px);
  
 
+/* ---------------КНОПКА SUBMIT------------ */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-  /* transition-property: fill;
-    transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);   */
-}
-
-/* .svg-modal-icon2{
-  display: inline-block;
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  bottom:0%;
-  left: 0%;
- transform: translate(15px,-11px);
-}
-
-
-
-.svg-modal-icon3{
-  display: inline-block;
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  bottom:0%;
-  left: 0%;
-transform: translate(15px,-11px);
-} */

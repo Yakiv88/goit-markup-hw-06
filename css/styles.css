@@ -830,9 +830,7 @@ color: #212121;
 .container-footer-generete{ 
   display: flex;
 flex-direction: row;
-
 align-items:center;
-
    padding-left: 15px;
   padding-right: 15px;
    width: 1200px;
@@ -982,6 +980,7 @@ margin-left: 0px;
   width: 570px;
   height: 86px;
   align-items: flex-start; 
+  padding-top: 3px;
 }
 
 .footer-form { 
@@ -990,7 +989,7 @@ margin-left: 0px;
   flex-direction: column; 
   justify-content: flex-start;
  align-items: flex-start; 
- padding-top: 3px;
+ /* padding-top: 3px; */
 }
 
 .input-button {  
@@ -1260,7 +1259,10 @@ color:var(--header-color);
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
  transition:transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: scale(1.1);
-}.
+}
+
+
+
 
 
 
@@ -1337,6 +1339,8 @@ pointer-events: none;
 
 
 .modal  { 
+  padding-left: 41px;
+  padding-right: 39px;
 position: absolute;
 top: 50%;
 left: 50%;
@@ -1384,12 +1388,169 @@ transform: translate(-50%,-50%) scale(1.1);
   border-radius:50% ;
  }
 
+ /* ------------ОФОРМЛЕНИЕ ФОРМЫ МОДАЛКИ---------------------  */
  
-   
-/* .page-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  /* align:center; */
-  letter-spacing: 0.06em;
-  color:var(--header-color);} */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+  padding-top: 40px;
+  padding-bottom: 28px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-field{
+  position: relative;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+}
+
+
+.form-label{
+  padding: 0;
+padding-bottom: 4px;
+
+font-family: Roboto;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.01em;
+color: #757575;
+}
+
+
+.form-title-modal{
+ margin: 0;
+ margin-bottom: 12px;
+display: block;
+font-family: Roboto;
+font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+
+
+.input-modal{
+  outline: none;
+  padding-left: 35px;
+  display:inline-block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition:transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+ 
+}
+
+/* -----------------ХОВЕР И ФОКУС-------------------- */
+
+
+
+ 
+ .input-modal:hover ~.svg-modal-icon,
+.input-modal:focus ~.svg-modal-icon{
+fill:var(--blue-color);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+ 
+}  
+
+
+.input-modal:hover,
+.input-modal:focus {
+  outline: none;
+border-color: #2196F3;
+transition: border-color, transform  250ms cubic-bezier(0.4, 0, 0.2, 1); 
+transform: scale(1.02);  
+}  
+
+
+ 
+ 
+
+/* ---------TEXTERIA-------- */
+
+.input-texteria {
+  display: block;
+padding: 12px 16px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+}
+
+
+/* --------SVG------------ */
+
+.svg-modal-icon{
+  display: inline ;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+bottom:0%;
+  left: 0%;
+ transform: translate(15px,-11px);
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  /* transition-property: fill;
+    transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);   */
+}
+
+/* .svg-modal-icon2{
+  display: inline-block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  bottom:0%;
+  left: 0%;
+ transform: translate(15px,-11px);
+}
+
+
+
+.svg-modal-icon3{
+  display: inline-block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  bottom:0%;
+  left: 0%;
+transform: translate(15px,-11px);
+} */

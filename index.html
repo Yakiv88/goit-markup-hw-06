@@ -25,7 +25,7 @@
                         href=" "><span>Студия</span></a>
                 </li>
                 <li class="item">
-                    <a class="hd  link link-blue " href="portfolio.html">Портфолио</a>
+                    <a class="hd link link-blue " href="portfolio.html">Портфолио</a>
                 </li>
                 <li class="item">
                     <a class="hd link link-blue " href="">Контакты</a>
@@ -35,19 +35,21 @@
         </nav>
         <div class="conteiner-u">
          
-                <svg class=" link-icon-heder  " width="16" height="12">
+                
+            <a class="cm-header-first item-a link link-blue ul-link-blu kontakt" href="mailto:info@devstudio.com">
+            <svg class=" link-icon-heder  " width="16" height="12">
                     <use href="./images/sprite.svg#icon-mail"></use>
-            </svg>
-            <a class="cm-header-first item-a link link-blue ul-link-blu kontakt" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </svg>info@devstudio.com</a>
             
      
-            <svg class="link-icon-heder  " width="10" height="16">
+            
+            <a class="item-b icon-b-header one-item link link-blue ul-link-blu kontakt" href="tel:+380961111111">
+       
+                <svg class="link-icon-heder  " width="10" height="16">
                 <use href="./images/sprite.svg#icon-mobilka"></use>
-            </svg>
-                      <a class="item-b icon-b-header one-item link link-blue ul-link-blu kontakt" href="tel:+380961111111">
-            +38 096 111 11 11
-                </a>
+            </svg>+38 096 111 11 11</a> 
         </div>
+                
     
         </div>
     </header>
@@ -391,19 +393,35 @@
             <div class="form-field">
                 <label for="modal-id3" class="form-label">Почта</label>
                 <input type="email" name="email" id="modal-id3" class="input-modal">
-                    <svg class="svg-modal-icon" width=" " height=" ">
+                   
+                <svg class="svg-modal-icon" width=" " height=" ">
                         <use href="./images/icons.svg#icon-convert"></use>
                     </svg>
             </div>
-            <div class="form-field">
+            <div class="form-field-texteria ">
                 <label for="modal-id4" class="form-label">Коментарий</label>
-                <textarea name="Коментарий" rows="6" placeholder="Введите текст" id="modal-id4" class="input-texteria"></textarea>
+                <textarea name="Коментарий" rows="8" placeholder="Введите текст" id="modal-id4" class="input-texteria"></textarea>
             </div>
-            <div class="form-field">
-                <input type="checkbox" name="licenze" id="modal-id5" class="modal-checkbox"
+
+
+
+            <div class="form-field1 ">
+                <input type="checkbox" name="licenze" id="modal-id5" class="input-modal1"
                         value="licenze">
-                <label for="modal-id5" class="form-label-checkbox ">Соглашаюсь с рассылкой и принимаю условия договора<a href="">Условия договора</a></label>
+                <label for="modal-id5" class="form-label-checkbox">
+                    <span class="span-form-modal">
+                         <svg class="svg-kub" width=" 16" height=" 15 ">
+                              <use href="./images/icons.svg#icon-galochka"></use>
+                         </svg>
+                    </span>
+                    <p class="vvv">Соглашаюсь с рассылкой и принимаю</p>
+                    <a class="a-licenze " href="">Условия договора</a>
+                    
+                </label>
             </div>
+
+
+
 
                  <button type="submit" class="button-hero">Отправить</button>
                </form>
